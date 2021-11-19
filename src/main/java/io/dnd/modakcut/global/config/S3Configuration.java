@@ -21,8 +21,8 @@ public class S3Configuration {
 	private String secretKey;
 
 	@Bean
-	public AmazonS3 getAmazonS3() {
-		AWSCredentials credentials = new BasicAWSCredentials(accessKey, secretKey);
+	public AmazonS3 getS3ClientBean() {
+		AWSCredentials credentials = new BasicAWSCredentials(this.accessKey, this.secretKey);
 		return AmazonS3ClientBuilder.standard()
 				.withCredentials(new AWSStaticCredentialsProvider(credentials))
 				.withRegion(Regions.AP_NORTHEAST_2)
