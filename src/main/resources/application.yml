@@ -2,10 +2,12 @@ spring:
   jackson:
     property-naming-strategy: SNAKE_CASE
   datasource:
-    url: ${MYSQL_URL}
+    url: jdbc:mysql://${DB_URL}:3306/${DB_NAME}?useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true
     driver-class-name: com.mysql.cj.jdbc.Driver
     hikari:
       maxLifetime: 580000
+    username: ${DB_USER}
+    password: ${DB_PASS}
   servlet:
     multipart:
       max-file-size: 10MB
@@ -17,3 +19,5 @@ aws:
   s3:
     bucket: ${S3_BUCKET}
     base-image-url: ${S3_BASE_URL}
+  accessKey: ${AWS_ACCESS}
+  secretKey: ${AWS_SECRET}
