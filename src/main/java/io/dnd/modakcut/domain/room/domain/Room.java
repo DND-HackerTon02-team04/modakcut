@@ -32,10 +32,10 @@ public class Room {
 	@Column(columnDefinition = "BINARY(36)")
 	private String UUID;
 
-	@OneToMany(fetch = FetchType.LAZY)
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "room")
 	private final Set<Medium> media = new HashSet<>();
 
-	@OneToMany(fetch = FetchType.LAZY)
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "room")
 	private final Set<Result> results = new HashSet<>();
 
 }
