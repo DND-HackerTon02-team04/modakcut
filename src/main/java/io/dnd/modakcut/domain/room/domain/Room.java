@@ -23,7 +23,7 @@ import org.hibernate.annotations.GenericGenerator;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-@Entity(name = "tbl_group")
+@Entity(name = "tbl_room")
 public class Room {
 
 	@Id

@@ -24,7 +24,7 @@ public class Medium {
 	private String id;
 
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "group_id")
-	private Room group;
+	@JoinColumn(name = "room_id")
+	private Room room;
 
 }
