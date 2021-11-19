@@ -11,7 +11,9 @@ import lombok.Getter;
 public enum ErrorCode {
 
 	FILE_EMPTY(400, "File is Empty"),
-	FILE_UPLOAD_FAIL(400, "File upload was fail.");
+	FILE_UPLOAD_FAIL(400, "File upload was fail."),
+
+	ROOM_NOT_FOUND(404, "Room not found");
 
 	private int status;
 	private String message;
