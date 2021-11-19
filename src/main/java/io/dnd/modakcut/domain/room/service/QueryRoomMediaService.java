@@ -2,7 +2,6 @@ package io.dnd.modakcut.domain.room.service;
 
 import java.util.stream.Collectors;
 
-import io.dnd.modakcut.domain.medium.domain.Medium;
 import io.dnd.modakcut.domain.room.domain.repository.RoomRepository;
 import io.dnd.modakcut.domain.room.exception.RoomNotFoundException;
 import io.dnd.modakcut.domain.room.presentation.dto.response.MediaResponse;
