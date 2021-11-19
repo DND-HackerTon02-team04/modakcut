@@ -21,3 +21,10 @@ aws:
     base-image-url: ${S3_BASE_URL}
   accessKey: ${AWS_ACCESS}
   secretKey: ${AWS_SECRET}
+
+logging:
+  level:
+    com:
+      amazonaws:
+        util:
+          EC2MetadataUtils: error
