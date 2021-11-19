@@ -1,1 +1,19 @@
+spring:
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+  datasource:
+    url: ${MYSQL_URL}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maxLifetime: 580000
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  jpa:
+    show-sql: true
 
+aws:
+  s3:
+    bucket: ${S3_BUCKET}
+    base-image-url: ${S3_BASE_URL}
